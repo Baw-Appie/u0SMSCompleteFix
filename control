@@ -1,0 +1,9 @@
+Package: com.rpgfarm.u0smscompletefix
+Name: u0SMSCompleteFix
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Fix unc0ver sms auto complete
+Maintainer: Baw Appie <pp121324@gmail.com>
+Author: Baw Appie <pp121324@gmail.com>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
