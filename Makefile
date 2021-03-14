@@ -13,4 +13,6 @@ include $(THEOS_MAKE_PATH)/bundle.mk
 
 SUBPROJECTS += mobileu0smscompletefix
 
+include $(THEOS_MAKE_PATH)/aggregate.mk
+
 include $(THEOS_MAKE_PATH)/tweak.mk

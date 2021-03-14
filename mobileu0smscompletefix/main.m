@@ -52,7 +52,9 @@ int main(int argc, char** argv, char** envp)
 
     // /bin/sh -c "launchctl stop com.apple.TextInput.kbd && launchctl start com.apple.TextInput.kbd"
 
-    const char* args[] = {"-c", "\"launchctl stop com.apple.TextInput.kbd && launchctl start com.apple.TextInput.kbd\"", NULL};
+    // system("/bin/sh -c \"launchctl stop com.apple.TextInput.kbd && launchctl start com.apple.TextInput.kbd\"");
+
+    const char* args[] = {"sh", "-c", "launchctl stop com.apple.TextInput.kbd && launchctl start com.apple.TextInput.kbd", NULL};
     posix_spawn(&pid, "/bin/sh", NULL, NULL, (char* const*)args, NULL);
 
 	return 0;
